@@ -3,236 +3,254 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Resume - Software Engineer</title>
+  <title>Blerta Jashari – Software Engineer</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f0f2f5;
+      background: #eef1f5;
       color: #2d2d2d;
       line-height: 1.6;
     }
 
     .container {
-      max-width: 860px;
+      max-width: 900px;
       margin: 40px auto;
       background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      border-radius: 12px;
+      box-shadow: 0 6px 32px rgba(0,0,0,0.12);
       overflow: hidden;
     }
 
-    /* Header */
+    /* HEADER */
     header {
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+      background: linear-gradient(135deg, #0d1b2a 0%, #1b3a5c 60%, #1565c0 100%);
       color: #fff;
-      padding: 48px 48px 36px;
+      padding: 48px 52px 36px;
     }
 
     header h1 {
-      font-size: 2.4rem;
-      font-weight: 700;
-      letter-spacing: 1px;
+      font-size: 2.6rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
     }
 
-    header .title {
-      font-size: 1.1rem;
-      color: #a8c6fa;
+    header .tagline {
+      font-size: 0.95rem;
+      color: #90caf9;
       margin-top: 6px;
-      font-weight: 400;
+      letter-spacing: 0.5px;
     }
 
     .contact-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 18px;
-      margin-top: 20px;
+      gap: 16px;
+      margin-top: 18px;
     }
 
     .contact-bar a,
     .contact-bar span {
-      color: #cdd9f0;
+      color: #cfe8fc;
       text-decoration: none;
-      font-size: 0.9rem;
+      font-size: 0.88rem;
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 5px;
     }
 
-    .contact-bar a:hover {
-      color: #fff;
-    }
+    .contact-bar a:hover { color: #fff; text-decoration: underline; }
 
-    /* Main layout */
+    /* LAYOUT */
     .body-grid {
       display: grid;
-      grid-template-columns: 260px 1fr;
-      min-height: 100%;
+      grid-template-columns: 255px 1fr;
     }
 
-    /* Sidebar */
+    /* SIDEBAR */
     aside {
-      background: #f7f9fc;
-      padding: 36px 28px;
-      border-right: 1px solid #e8ecf0;
+      background: #f4f7fb;
+      padding: 36px 26px;
+      border-right: 1px solid #dde3ec;
     }
 
-    .sidebar-section {
-      margin-bottom: 32px;
-    }
+    .s-section { margin-bottom: 28px; }
 
-    .sidebar-section h3 {
-      font-size: 0.75rem;
-      font-weight: 700;
+    .s-section h3 {
+      font-size: 0.7rem;
+      font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 1.5px;
-      color: #0f3460;
-      border-bottom: 2px solid #0f3460;
-      padding-bottom: 6px;
-      margin-bottom: 14px;
+      letter-spacing: 1.8px;
+      color: #1565c0;
+      border-bottom: 2px solid #1565c0;
+      padding-bottom: 5px;
+      margin-bottom: 12px;
     }
 
-    .skill-tag {
+    .tag {
       display: inline-block;
-      background: #e8f0fe;
-      color: #1a73e8;
+      background: #e3edf8;
+      color: #1565c0;
       border-radius: 4px;
-      padding: 3px 10px;
-      font-size: 0.82rem;
-      margin: 3px 2px;
+      padding: 2px 8px;
+      font-size: 0.78rem;
+      margin: 2px 2px 2px 0;
       font-weight: 500;
     }
 
-    .sidebar-item {
-      font-size: 0.88rem;
+    .s-item {
+      font-size: 0.86rem;
       color: #444;
       margin-bottom: 6px;
       padding-left: 10px;
-      border-left: 3px solid #a8c6fa;
+      border-left: 3px solid #90caf9;
+      line-height: 1.5;
     }
 
-    /* Main content */
-    main {
-      padding: 36px 40px;
-    }
+    /* MAIN */
+    main { padding: 36px 40px; }
 
-    .section {
-      margin-bottom: 36px;
-    }
+    .section { margin-bottom: 30px; }
 
     .section h2 {
-      font-size: 1rem;
-      font-weight: 700;
+      font-size: 0.72rem;
+      font-weight: 800;
       text-transform: uppercase;
-      letter-spacing: 1.5px;
-      color: #0f3460;
-      border-bottom: 2px solid #0f3460;
-      padding-bottom: 6px;
-      margin-bottom: 20px;
+      letter-spacing: 1.8px;
+      color: #1565c0;
+      border-bottom: 2px solid #1565c0;
+      padding-bottom: 5px;
+      margin-bottom: 18px;
     }
 
-    /* Experience card */
+    .summary-text {
+      font-size: 0.91rem;
+      color: #444;
+      line-height: 1.8;
+    }
+
+    .summary-text strong { color: #1565c0; }
+
+    /* COMPANY BLOCK */
+    .company-block { margin-bottom: 20px; }
+
+    .company-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .company-name { font-size: 1rem; font-weight: 800; color: #0d1b2a; }
+    .company-location { font-size: 0.82rem; color: #888; }
+    .company-dates { font-size: 0.82rem; color: #888; white-space: nowrap; }
+
+    /* ROLE */
+    .role {
+      margin-bottom: 12px;
+      padding-left: 14px;
+      border-left: 3px solid #90caf9;
+    }
+
+    .role-header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 4px;
+    }
+
+    .role-title { font-size: 0.92rem; font-weight: 700; color: #1565c0; }
+    .role-date { font-size: 0.8rem; color: #888; white-space: nowrap; }
+
+    .role ul { padding-left: 16px; margin-top: 4px; }
+    .role ul li { font-size: 0.86rem; color: #555; margin-bottom: 4px; }
+
+    .stack-line {
+      font-size: 0.8rem;
+      color: #666;
+      margin-top: 8px;
+      padding-left: 14px;
+      font-style: italic;
+    }
+
+    .stack-line span { font-weight: 700; color: #1565c0; font-style: normal; }
+
+    /* SINGLE ROLE CARD */
     .exp-card {
-      margin-bottom: 24px;
-      padding-left: 16px;
-      border-left: 3px solid #a8c6fa;
-    }
-
-    .exp-card:last-child {
-      margin-bottom: 0;
+      margin-bottom: 16px;
+      padding-left: 14px;
+      border-left: 3px solid #90caf9;
     }
 
     .exp-header {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
       flex-wrap: wrap;
       gap: 4px;
     }
 
-    .exp-role {
-      font-size: 1rem;
-      font-weight: 700;
-      color: #1a1a2e;
+    .exp-role { font-size: 0.95rem; font-weight: 700; color: #0d1b2a; }
+    .exp-company { font-size: 0.85rem; color: #1565c0; font-weight: 600; }
+    .exp-date { font-size: 0.8rem; color: #888; white-space: nowrap; }
+
+    .exp-card ul { padding-left: 16px; margin-top: 6px; }
+    .exp-card ul li { font-size: 0.86rem; color: #555; margin-bottom: 4px; }
+
+    /* EDUCATION */
+    .edu-item {
+      margin-bottom: 14px;
+      padding-left: 14px;
+      border-left: 3px solid #90caf9;
     }
 
-    .exp-date {
-      font-size: 0.82rem;
-      color: #888;
-      white-space: nowrap;
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 4px;
     }
 
-    .exp-company {
-      font-size: 0.9rem;
-      color: #0f3460;
-      font-weight: 600;
-      margin-top: 2px;
-    }
+    .edu-degree { font-size: 0.92rem; font-weight: 700; color: #0d1b2a; }
+    .edu-school { font-size: 0.85rem; color: #1565c0; font-weight: 600; }
+    .edu-date { font-size: 0.8rem; color: #888; white-space: nowrap; }
+    .edu-note { font-size: 0.82rem; color: #666; margin-top: 3px; font-style: italic; }
 
-    .exp-card ul {
-      margin-top: 10px;
-      padding-left: 18px;
-    }
-
-    .exp-card ul li {
-      font-size: 0.88rem;
-      color: #555;
-      margin-bottom: 5px;
-    }
-
-    /* Summary */
-    .summary-text {
-      font-size: 0.93rem;
-      color: #555;
-      line-height: 1.8;
-    }
-
-    /* Footer */
+    /* FOOTER */
     footer {
       text-align: center;
-      padding: 16px;
-      font-size: 0.78rem;
-      color: #bbb;
-      background: #f7f9fc;
-      border-top: 1px solid #e8ecf0;
+      padding: 14px;
+      font-size: 0.76rem;
+      color: #aaa;
+      background: #f4f7fb;
+      border-top: 1px solid #dde3ec;
     }
 
-    @media (max-width: 640px) {
-      .body-grid {
-        grid-template-columns: 1fr;
-      }
-      header {
-        padding: 32px 24px;
-      }
-      main {
-        padding: 24px;
-      }
-      aside {
-        border-right: none;
-        border-bottom: 1px solid #e8ecf0;
-      }
+    @media (max-width: 660px) {
+      .body-grid { grid-template-columns: 1fr; }
+      header { padding: 28px 22px; }
+      header h1 { font-size: 1.9rem; }
+      main { padding: 24px 20px; }
+      aside { border-right: none; border-bottom: 1px solid #dde3ec; }
     }
   </style>
 </head>
 <body>
-
 <div class="container">
 
   <!-- HEADER -->
   <header>
-    <h1>Your Name</h1>
-    <div class="title">Software Engineer &mdash; .NET Specialist</div>
+    <h1>Blerta Jashari</h1>
+    <div class="tagline">Software Engineer &nbsp;&middot;&nbsp; .NET &nbsp;&middot;&nbsp; Microservices &nbsp;&middot;&nbsp; Cloud-Native &nbsp;&middot;&nbsp; Team Lead</div>
     <div class="contact-bar">
-      <span>&#9993; your@email.com</span>
-      <span>&#128222; +383 XX XXX XXX</span>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank">&#128101; LinkedIn</a>
-      <a href="https://github.com/yourusername" target="_blank">&#128736; GitHub</a>
+      <a href="mailto:blertaaj@live.com">&#9993; blertaaj@live.com</a>
+      <span>&#128222; +383 44-882-357</span>
       <span>&#127758; Pristina, Kosovo</span>
+      <a href="https://github.com/BlertaJ" target="_blank">&#128736; GitHub</a>
+      <a href="https://linkedin.com/in/blertajashari" target="_blank">&#128101; LinkedIn</a>
     </div>
   </header>
 
@@ -241,55 +259,85 @@
     <!-- SIDEBAR -->
     <aside>
 
-      <div class="sidebar-section">
-        <h3>Technical Skills</h3>
-        <span class="skill-tag">C#</span>
-        <span class="skill-tag">.NET / ASP.NET</span>
-        <span class="skill-tag">Entity Framework</span>
-        <span class="skill-tag">REST APIs</span>
-        <span class="skill-tag">SQL Server</span>
-        <span class="skill-tag">HTML</span>
-        <span class="skill-tag">CSS</span>
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">Git</span>
-        <span class="skill-tag">Azure DevOps</span>
+      <div class="s-section">
+        <h3>Languages &amp; Frameworks</h3>
+        <span class="tag">C#</span>
+        <span class="tag">.NET 8</span>
+        <span class="tag">ASP.NET Core</span>
+        <span class="tag">EF Core</span>
+        <span class="tag">Blazor</span>
+        <span class="tag">React</span>
+        <span class="tag">JavaScript</span>
       </div>
 
-      <div class="sidebar-section">
-        <h3>Education</h3>
-        <div class="sidebar-item">
-          <strong>Bachelor of Computer Science</strong><br />
-          University Name<br />
-          <span style="color:#888; font-size:0.82rem;">20XX &ndash; 20XX</span>
-        </div>
+      <div class="s-section">
+        <h3>Architecture &amp; APIs</h3>
+        <span class="tag">Microservices</span>
+        <span class="tag">Clean Architecture</span>
+        <span class="tag">DDD</span>
+        <span class="tag">REST</span>
+        <span class="tag">gRPC</span>
+        <span class="tag">Kafka</span>
+        <span class="tag">RabbitMQ</span>
+        <span class="tag">Event-Driven</span>
       </div>
 
-      <div class="sidebar-section">
+      <div class="s-section">
+        <h3>Cloud &amp; DevOps</h3>
+        <span class="tag">Azure DevOps</span>
+        <span class="tag">Docker</span>
+        <span class="tag">Azure</span>
+        <span class="tag">GitHub Actions</span>
+        <span class="tag">CI/CD</span>
+        <span class="tag">Kubernetes</span>
+        <span class="tag">Agile/Scrum</span>
+      </div>
+
+      <div class="s-section">
+        <h3>Databases &amp; Caching</h3>
+        <span class="tag">SQL Server</span>
+        <span class="tag">MongoDB</span>
+        <span class="tag">PostgreSQL</span>
+        <span class="tag">Redis</span>
+        <span class="tag">Query Optimisation</span>
+        <span class="tag">OpenTelemetry</span>
+      </div>
+
+      <div class="s-section">
+        <h3>AI &amp; Emerging</h3>
+        <span class="tag">Azure OpenAI</span>
+        <span class="tag">Semantic Kernel</span>
+        <span class="tag">GitHub Copilot</span>
+      </div>
+
+      <div class="s-section">
         <h3>Languages</h3>
-        <div class="sidebar-item">Albanian &mdash; Native</div>
-        <div class="sidebar-item">English &mdash; Professional</div>
+        <div class="s-item">Albanian &mdash; Native</div>
+        <div class="s-item">English &mdash; Professional</div>
       </div>
 
-      <div class="sidebar-section">
+      <div class="s-section">
         <h3>Interests</h3>
-        <div class="sidebar-item">E-Commerce Systems</div>
-        <div class="sidebar-item">Backend Architecture</div>
-        <div class="sidebar-item">Teaching &amp; Mentorship</div>
+        <div class="s-item">Volleyball</div>
+        <div class="s-item">Pilates</div>
+        <div class="s-item">Travelling</div>
+        <div class="s-item">Creative pursuits</div>
       </div>
 
     </aside>
 
-    <!-- MAIN CONTENT -->
+    <!-- MAIN -->
     <main>
 
       <!-- SUMMARY -->
       <div class="section">
         <h2>Summary</h2>
         <p class="summary-text">
-          Software Engineer with 5 years of experience specializing in .NET development and e-commerce platform engineering.
-          Currently building scalable commerce solutions at Gjirafa, one of the leading tech companies in the Western Balkans.
-          Passionate about education and giving back to the community as a part-time instructor at BIT, teaching the next
-          generation of developers.
+          Software Engineer with <strong>5+ years</strong> building scalable .NET microservices and event-driven platforms
+          serving multiple countries. Progressed from Junior to Senior to <strong>Team Lead</strong> at Gjirafa, Inc.
+          Delivered a <strong>40% API response-time improvement</strong> via Redis caching and query optimisation.
+          Experienced with Kafka, Azure DevOps, Docker, SQL Server, MongoDB, and React. Passionate about engineering
+          excellence and mentoring the next generation of developers.
         </p>
       </div>
 
@@ -297,66 +345,130 @@
       <div class="section">
         <h2>Experience</h2>
 
+        <!-- Gjirafa -->
+        <div class="company-block">
+          <div class="company-header">
+            <div>
+              <span class="company-name">Gjirafa, Inc.</span>
+              <span class="company-location"> &nbsp;&middot;&nbsp; Pristina, Kosovo</span>
+            </div>
+            <span class="company-dates">Jan 2021 – Present</span>
+          </div>
+
+          <div class="role">
+            <div class="role-header">
+              <span class="role-title">Team Lead &amp; Senior Software Engineer</span>
+              <span class="role-date">Jan 2024 – Present</span>
+            </div>
+            <ul>
+              <li>Led a team of 4 engineers — sprint planning, code reviews, and 1-on-1s, improving delivery velocity by 30%.</li>
+              <li>Defined microservices migration roadmap and managed Azure DevOps pipelines, boards, and release workflows.</li>
+            </ul>
+          </div>
+
+          <div class="role">
+            <div class="role-header">
+              <span class="role-title">Senior Software Engineer</span>
+              <span class="role-date">Jan 2023 – Jan 2024</span>
+            </div>
+            <ul>
+              <li>Architected Kafka-based microservices for real-time pricing &amp; inventory across multi-country e-commerce platforms.</li>
+              <li>Cut API response times 40% with Redis caching and optimised queries across SQL Server and MongoDB.</li>
+            </ul>
+          </div>
+
+          <div class="role">
+            <div class="role-header">
+              <span class="role-title">Junior Software Engineer</span>
+              <span class="role-date">Jan 2021 – Jan 2023</span>
+            </div>
+            <ul>
+              <li>Built RESTful APIs (ASP.NET Core), contributed to pricing engine, and shipped React front-end features.</li>
+              <li>Designed and optimised DB schemas in SQL Server; integrated RabbitMQ for async inter-service messaging.</li>
+            </ul>
+          </div>
+
+          <div class="stack-line">
+            <span>Stack:</span> C# &middot; ASP.NET Core &middot; EF Core &middot; SQL Server &middot; MongoDB &middot; Kafka &middot; RabbitMQ &middot; Redis &middot; Docker &middot; React &middot; Azure DevOps
+          </div>
+        </div>
+
+        <!-- BIT -->
         <div class="exp-card">
           <div class="exp-header">
             <div>
-              <div class="exp-role">Software Engineer</div>
-              <div class="exp-company">Gjirafa Inc.</div>
+              <div class="exp-role">Part-time Instructor</div>
+              <div class="exp-company">Besa Institute of Technology &nbsp;&middot;&nbsp; Drenas, Kosovo</div>
             </div>
-            <div class="exp-date">Jan 2021 &ndash; Present</div>
+            <span class="exp-date">Jan 2023 – Present</span>
           </div>
           <ul>
-            <li>Designed and developed scalable e-commerce platform features serving thousands of daily users.</li>
-            <li>Built RESTful APIs with ASP.NET Core integrated with SQL Server and Entity Framework.</li>
-            <li>Collaborated with cross-functional teams to deliver product features on time.</li>
-            <li>Improved platform performance through query optimization and caching strategies.</li>
-            <li>Participated in code reviews and contributed to engineering best practices.</li>
+            <li>Delivered curriculum on .NET, ASP.NET Core, Blazor &amp; SQL to aspiring developers.</li>
+            <li>Built the BIT School website in Blazor as a hands-on project with students.</li>
           </ul>
         </div>
 
+        <!-- IMB -->
         <div class="exp-card">
           <div class="exp-header">
             <div>
-              <div class="exp-role">Part-Time Instructor</div>
-              <div class="exp-company">BIT &mdash; School of Technology</div>
+              <div class="exp-role">Software Developer Intern</div>
+              <div class="exp-company">IMB &nbsp;&middot;&nbsp; Tirana, Albania (Remote)</div>
             </div>
-            <div class="exp-date">20XX &ndash; Present</div>
+            <span class="exp-date">Jun 2020 – Jan 2021</span>
           </div>
           <ul>
-            <li>Teach introductory and intermediate courses in .NET, HTML, CSS, and JavaScript.</li>
-            <li>Design practical curriculum focused on real-world development skills.</li>
-            <li>Mentor students through hands-on projects and coding exercises.</li>
+            <li>Developed and optimised software solutions with cross-functional teams, applying security best practices.</li>
           </ul>
         </div>
 
       </div>
 
-      <!-- PROJECTS -->
+      <!-- EDUCATION -->
       <div class="section">
-        <h2>Notable Projects</h2>
+        <h2>Education</h2>
 
-        <div class="exp-card">
-          <div class="exp-header">
+        <div class="edu-item">
+          <div class="edu-header">
             <div>
-              <div class="exp-role">Gjirafa E-Commerce Platform</div>
+              <div class="edu-degree">BSc Computer Engineering</div>
+              <div class="edu-school">University of Pristina &nbsp;&middot;&nbsp; Pristina, Kosovo</div>
             </div>
+            <span class="edu-date">2017 – 2021</span>
           </div>
-          <ul>
-            <li>End-to-end e-commerce system with product catalog, cart, checkout, and order management.</li>
-            <li>Built with ASP.NET Core, Entity Framework, SQL Server, and integrated payment gateways.</li>
-          </ul>
         </div>
 
+        <div class="edu-item">
+          <div class="edu-header">
+            <div>
+              <div class="edu-degree">Erasmus Exchange – Computer Systems</div>
+              <div class="edu-school">Riga Technical University &nbsp;&middot;&nbsp; Riga, Latvia</div>
+            </div>
+            <span class="edu-date">Jan – Jun 2020</span>
+          </div>
+          <div class="edu-note">Built a campus classroom-finder website in collaboration with faculty and international peers.</div>
+        </div>
+      </div>
+
+      <!-- CERTIFICATIONS -->
+      <div class="section">
+        <h2>Certifications</h2>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:4px;">
+          <span class="tag" style="background:#e8f5e9; color:#2e7d32;">Distinguished Software Engineer – STIKK</span>
+          <span class="tag" style="background:#e8f5e9; color:#2e7d32;">DevOps – AUK</span>
+          <span class="tag" style="background:#e8f5e9; color:#2e7d32;">Cyber Security – VentureUP</span>
+          <span class="tag" style="background:#e8f5e9; color:#2e7d32;">IoT – AUK / RIT</span>
+          <span class="tag" style="background:#e8f5e9; color:#2e7d32;">Java – VentureUP</span>
+        </div>
       </div>
 
     </main>
   </div>
 
   <footer>
-    &copy; 2026 &mdash; Built with HTML &amp; CSS &mdash; Hosted on GitHub Pages
+    &copy; 2026 Blerta Jashari &nbsp;&middot;&nbsp; Built with HTML &amp; CSS &nbsp;&middot;&nbsp; Hosted on GitHub Pages
   </footer>
 
 </div>
-
 </body>
 </html>
