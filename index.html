@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume - Software Engineer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+      color: #2d2d2d;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 40px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+      overflow: hidden;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+      color: #fff;
+      padding: 48px 48px 36px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    header .title {
+      font-size: 1.1rem;
+      color: #a8c6fa;
+      margin-top: 6px;
+      font-weight: 400;
+    }
+
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .contact-bar a,
+    .contact-bar span {
+      color: #cdd9f0;
+      text-decoration: none;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .contact-bar a:hover {
+      color: #fff;
+    }
+
+    /* Main layout */
+    .body-grid {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      min-height: 100%;
+    }
+
+    /* Sidebar */
+    aside {
+      background: #f7f9fc;
+      padding: 36px 28px;
+      border-right: 1px solid #e8ecf0;
+    }
+
+    .sidebar-section {
+      margin-bottom: 32px;
+    }
+
+    .sidebar-section h3 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #0f3460;
+      border-bottom: 2px solid #0f3460;
+      padding-bottom: 6px;
+      margin-bottom: 14px;
+    }
+
+    .skill-tag {
+      display: inline-block;
+      background: #e8f0fe;
+      color: #1a73e8;
+      border-radius: 4px;
+      padding: 3px 10px;
+      font-size: 0.82rem;
+      margin: 3px 2px;
+      font-weight: 500;
+    }
+
+    .sidebar-item {
+      font-size: 0.88rem;
+      color: #444;
+      margin-bottom: 6px;
+      padding-left: 10px;
+      border-left: 3px solid #a8c6fa;
+    }
+
+    /* Main content */
+    main {
+      padding: 36px 40px;
+    }
+
+    .section {
+      margin-bottom: 36px;
+    }
+
+    .section h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #0f3460;
+      border-bottom: 2px solid #0f3460;
+      padding-bottom: 6px;
+      margin-bottom: 20px;
+    }
+
+    /* Experience card */
+    .exp-card {
+      margin-bottom: 24px;
+      padding-left: 16px;
+      border-left: 3px solid #a8c6fa;
+    }
+
+    .exp-card:last-child {
+      margin-bottom: 0;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    .exp-role {
+      font-size: 1rem;
+      font-weight: 700;
+      color: #1a1a2e;
+    }
+
+    .exp-date {
+      font-size: 0.82rem;
+      color: #888;
+      white-space: nowrap;
+    }
+
+    .exp-company {
+      font-size: 0.9rem;
+      color: #0f3460;
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .exp-card ul {
+      margin-top: 10px;
+      padding-left: 18px;
+    }
+
+    .exp-card ul li {
+      font-size: 0.88rem;
+      color: #555;
+      margin-bottom: 5px;
+    }
+
+    /* Summary */
+    .summary-text {
+      font-size: 0.93rem;
+      color: #555;
+      line-height: 1.8;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 16px;
+      font-size: 0.78rem;
+      color: #bbb;
+      background: #f7f9fc;
+      border-top: 1px solid #e8ecf0;
+    }
+
+    @media (max-width: 640px) {
+      .body-grid {
+        grid-template-columns: 1fr;
+      }
+      header {
+        padding: 32px 24px;
+      }
+      main {
+        padding: 24px;
+      }
+      aside {
+        border-right: none;
+        border-bottom: 1px solid #e8ecf0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header>
+    <h1>Your Name</h1>
+    <div class="title">Software Engineer &mdash; .NET Specialist</div>
+    <div class="contact-bar">
+      <span>&#9993; your@email.com</span>
+      <span>&#128222; +383 XX XXX XXX</span>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">&#128101; LinkedIn</a>
+      <a href="https://github.com/yourusername" target="_blank">&#128736; GitHub</a>
+      <span>&#127758; Pristina, Kosovo</span>
+    </div>
+  </header>
+
+  <div class="body-grid">
+
+    <!-- SIDEBAR -->
+    <aside>
+
+      <div class="sidebar-section">
+        <h3>Technical Skills</h3>
+        <span class="skill-tag">C#</span>
+        <span class="skill-tag">.NET / ASP.NET</span>
+        <span class="skill-tag">Entity Framework</span>
+        <span class="skill-tag">REST APIs</span>
+        <span class="skill-tag">SQL Server</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Azure DevOps</span>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Education</h3>
+        <div class="sidebar-item">
+          <strong>Bachelor of Computer Science</strong><br />
+          University Name<br />
+          <span style="color:#888; font-size:0.82rem;">20XX &ndash; 20XX</span>
+        </div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Languages</h3>
+        <div class="sidebar-item">Albanian &mdash; Native</div>
+        <div class="sidebar-item">English &mdash; Professional</div>
+      </div>
+
+      <div class="sidebar-section">
+        <h3>Interests</h3>
+        <div class="sidebar-item">E-Commerce Systems</div>
+        <div class="sidebar-item">Backend Architecture</div>
+        <div class="sidebar-item">Teaching &amp; Mentorship</div>
+      </div>
+
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+      <!-- SUMMARY -->
+      <div class="section">
+        <h2>Summary</h2>
+        <p class="summary-text">
+          Software Engineer with 5 years of experience specializing in .NET development and e-commerce platform engineering.
+          Currently building scalable commerce solutions at Gjirafa, one of the leading tech companies in the Western Balkans.
+          Passionate about education and giving back to the community as a part-time instructor at BIT, teaching the next
+          generation of developers.
+        </p>
+      </div>
+
+      <!-- EXPERIENCE -->
+      <div class="section">
+        <h2>Experience</h2>
+
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role">Software Engineer</div>
+              <div class="exp-company">Gjirafa Inc.</div>
+            </div>
+            <div class="exp-date">Jan 2021 &ndash; Present</div>
+          </div>
+          <ul>
+            <li>Designed and developed scalable e-commerce platform features serving thousands of daily users.</li>
+            <li>Built RESTful APIs with ASP.NET Core integrated with SQL Server and Entity Framework.</li>
+            <li>Collaborated with cross-functional teams to deliver product features on time.</li>
+            <li>Improved platform performance through query optimization and caching strategies.</li>
+            <li>Participated in code reviews and contributed to engineering best practices.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role">Part-Time Instructor</div>
+              <div class="exp-company">BIT &mdash; School of Technology</div>
+            </div>
+            <div class="exp-date">20XX &ndash; Present</div>
+          </div>
+          <ul>
+            <li>Teach introductory and intermediate courses in .NET, HTML, CSS, and JavaScript.</li>
+            <li>Design practical curriculum focused on real-world development skills.</li>
+            <li>Mentor students through hands-on projects and coding exercises.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- PROJECTS -->
+      <div class="section">
+        <h2>Notable Projects</h2>
+
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-role">Gjirafa E-Commerce Platform</div>
+            </div>
+          </div>
+          <ul>
+            <li>End-to-end e-commerce system with product catalog, cart, checkout, and order management.</li>
+            <li>Built with ASP.NET Core, Entity Framework, SQL Server, and integrated payment gateways.</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2026 &mdash; Built with HTML &amp; CSS &mdash; Hosted on GitHub Pages
+  </footer>
+
+</div>
+
+</body>
+</html>
