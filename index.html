@@ -9,8 +9,8 @@
 
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #eef1f5;
-      color: #2d2d2d;
+      background: #f5f5f5;
+      color: #1a1a1a;
       line-height: 1.6;
     }
 
@@ -18,28 +18,28 @@
       max-width: 900px;
       margin: 40px auto;
       background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 6px 32px rgba(0,0,0,0.12);
+      border-radius: 8px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.08);
       overflow: hidden;
     }
 
     /* HEADER */
     header {
-      background: linear-gradient(135deg, #0d1b2a 0%, #1b3a5c 60%, #1565c0 100%);
+      background: #1a1a1a;
       color: #fff;
-      padding: 48px 52px 36px;
+      padding: 44px 52px 32px;
     }
 
     header h1 {
-      font-size: 2.6rem;
-      font-weight: 800;
-      letter-spacing: 2px;
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: 3px;
       text-transform: uppercase;
     }
 
     header .tagline {
-      font-size: 0.95rem;
-      color: #90caf9;
+      font-size: 0.88rem;
+      color: #aaa;
       margin-top: 6px;
       letter-spacing: 0.5px;
     }
@@ -47,94 +47,96 @@
     .contact-bar {
       display: flex;
       flex-wrap: wrap;
-      gap: 16px;
-      margin-top: 18px;
+      gap: 18px;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid #333;
     }
 
     .contact-bar a,
     .contact-bar span {
-      color: #cfe8fc;
+      color: #ccc;
       text-decoration: none;
-      font-size: 0.88rem;
+      font-size: 0.84rem;
       display: flex;
       align-items: center;
       gap: 5px;
     }
 
-    .contact-bar a:hover { color: #fff; text-decoration: underline; }
+    .contact-bar a:hover { color: #fff; }
 
     /* LAYOUT */
     .body-grid {
       display: grid;
-      grid-template-columns: 255px 1fr;
+      grid-template-columns: 240px 1fr;
     }
 
     /* SIDEBAR */
     aside {
-      background: #f4f7fb;
-      padding: 36px 26px;
-      border-right: 1px solid #dde3ec;
+      background: #fafafa;
+      padding: 32px 24px;
+      border-right: 1px solid #ebebeb;
     }
 
-    .s-section { margin-bottom: 28px; }
+    .s-section { margin-bottom: 26px; }
 
     .s-section h3 {
-      font-size: 0.7rem;
-      font-weight: 800;
+      font-size: 0.68rem;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 1.8px;
-      color: #1565c0;
-      border-bottom: 2px solid #1565c0;
+      letter-spacing: 2px;
+      color: #888;
+      border-bottom: 1px solid #e0e0e0;
       padding-bottom: 5px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .tag {
       display: inline-block;
-      background: #e3edf8;
-      color: #1565c0;
-      border-radius: 4px;
+      background: #f0f0f0;
+      color: #333;
+      border-radius: 3px;
       padding: 2px 8px;
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       margin: 2px 2px 2px 0;
       font-weight: 500;
     }
 
     .s-item {
-      font-size: 0.86rem;
-      color: #444;
-      margin-bottom: 6px;
+      font-size: 0.84rem;
+      color: #555;
+      margin-bottom: 5px;
       padding-left: 10px;
-      border-left: 3px solid #90caf9;
+      border-left: 2px solid #ddd;
       line-height: 1.5;
     }
 
     /* MAIN */
-    main { padding: 36px 40px; }
+    main { padding: 32px 40px; }
 
-    .section { margin-bottom: 30px; }
+    .section { margin-bottom: 28px; }
 
     .section h2 {
-      font-size: 0.72rem;
-      font-weight: 800;
+      font-size: 0.68rem;
+      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 1.8px;
-      color: #1565c0;
-      border-bottom: 2px solid #1565c0;
+      letter-spacing: 2px;
+      color: #888;
+      border-bottom: 1px solid #e0e0e0;
       padding-bottom: 5px;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
 
     .summary-text {
-      font-size: 0.91rem;
+      font-size: 0.9rem;
       color: #444;
       line-height: 1.8;
     }
 
-    .summary-text strong { color: #1565c0; }
+    .summary-text strong { color: #1a1a1a; }
 
     /* COMPANY BLOCK */
-    .company-block { margin-bottom: 20px; }
+    .company-block { margin-bottom: 18px; }
 
     .company-header {
       display: flex;
@@ -144,15 +146,15 @@
       margin-bottom: 10px;
     }
 
-    .company-name { font-size: 1rem; font-weight: 800; color: #0d1b2a; }
-    .company-location { font-size: 0.82rem; color: #888; }
-    .company-dates { font-size: 0.82rem; color: #888; white-space: nowrap; }
+    .company-name { font-size: 0.98rem; font-weight: 700; color: #1a1a1a; }
+    .company-location { font-size: 0.8rem; color: #999; }
+    .company-dates { font-size: 0.8rem; color: #999; white-space: nowrap; }
 
     /* ROLE */
     .role {
       margin-bottom: 12px;
       padding-left: 14px;
-      border-left: 3px solid #90caf9;
+      border-left: 2px solid #e0e0e0;
     }
 
     .role-header {
@@ -163,27 +165,27 @@
       margin-bottom: 4px;
     }
 
-    .role-title { font-size: 0.92rem; font-weight: 700; color: #1565c0; }
-    .role-date { font-size: 0.8rem; color: #888; white-space: nowrap; }
+    .role-title { font-size: 0.9rem; font-weight: 700; color: #1a1a1a; }
+    .role-date { font-size: 0.78rem; color: #999; white-space: nowrap; }
 
     .role ul { padding-left: 16px; margin-top: 4px; }
-    .role ul li { font-size: 0.86rem; color: #555; margin-bottom: 4px; }
+    .role ul li { font-size: 0.84rem; color: #555; margin-bottom: 4px; }
 
     .stack-line {
-      font-size: 0.8rem;
-      color: #666;
+      font-size: 0.78rem;
+      color: #888;
       margin-top: 8px;
       padding-left: 14px;
       font-style: italic;
     }
 
-    .stack-line span { font-weight: 700; color: #1565c0; font-style: normal; }
+    .stack-line span { font-weight: 700; color: #555; font-style: normal; }
 
     /* SINGLE ROLE CARD */
     .exp-card {
-      margin-bottom: 16px;
+      margin-bottom: 14px;
       padding-left: 14px;
-      border-left: 3px solid #90caf9;
+      border-left: 2px solid #e0e0e0;
     }
 
     .exp-header {
@@ -193,18 +195,18 @@
       gap: 4px;
     }
 
-    .exp-role { font-size: 0.95rem; font-weight: 700; color: #0d1b2a; }
-    .exp-company { font-size: 0.85rem; color: #1565c0; font-weight: 600; }
-    .exp-date { font-size: 0.8rem; color: #888; white-space: nowrap; }
+    .exp-role { font-size: 0.92rem; font-weight: 700; color: #1a1a1a; }
+    .exp-company { font-size: 0.83rem; color: #555; font-weight: 600; }
+    .exp-date { font-size: 0.78rem; color: #999; white-space: nowrap; }
 
     .exp-card ul { padding-left: 16px; margin-top: 6px; }
-    .exp-card ul li { font-size: 0.86rem; color: #555; margin-bottom: 4px; }
+    .exp-card ul li { font-size: 0.84rem; color: #555; margin-bottom: 4px; }
 
     /* EDUCATION */
     .edu-item {
       margin-bottom: 14px;
       padding-left: 14px;
-      border-left: 3px solid #90caf9;
+      border-left: 2px solid #e0e0e0;
     }
 
     .edu-header {
@@ -214,27 +216,27 @@
       gap: 4px;
     }
 
-    .edu-degree { font-size: 0.92rem; font-weight: 700; color: #0d1b2a; }
-    .edu-school { font-size: 0.85rem; color: #1565c0; font-weight: 600; }
-    .edu-date { font-size: 0.8rem; color: #888; white-space: nowrap; }
-    .edu-note { font-size: 0.82rem; color: #666; margin-top: 3px; font-style: italic; }
+    .edu-degree { font-size: 0.9rem; font-weight: 700; color: #1a1a1a; }
+    .edu-school { font-size: 0.83rem; color: #555; font-weight: 600; }
+    .edu-date { font-size: 0.78rem; color: #999; white-space: nowrap; }
+    .edu-note { font-size: 0.8rem; color: #777; margin-top: 3px; font-style: italic; }
 
     /* FOOTER */
     footer {
       text-align: center;
-      padding: 14px;
-      font-size: 0.76rem;
-      color: #aaa;
-      background: #f4f7fb;
-      border-top: 1px solid #dde3ec;
+      padding: 12px;
+      font-size: 0.74rem;
+      color: #bbb;
+      background: #fafafa;
+      border-top: 1px solid #ebebeb;
     }
 
     @media (max-width: 660px) {
       .body-grid { grid-template-columns: 1fr; }
       header { padding: 28px 22px; }
-      header h1 { font-size: 1.9rem; }
+      header h1 { font-size: 1.8rem; }
       main { padding: 24px 20px; }
-      aside { border-right: none; border-bottom: 1px solid #dde3ec; }
+      aside { border-right: none; border-bottom: 1px solid #ebebeb; }
     }
   </style>
 </head>
@@ -471,11 +473,11 @@
       <div class="section">
         <h2>Certifications</h2>
         <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:4px;">
-          <span class="tag" style="background:#e8f5e9; color:#2e7d32;">Distinguished Software Engineer – STIKK</span>
-          <span class="tag" style="background:#e8f5e9; color:#2e7d32;">DevOps – AUK</span>
-          <span class="tag" style="background:#e8f5e9; color:#2e7d32;">Cyber Security – VentureUP</span>
-          <span class="tag" style="background:#e8f5e9; color:#2e7d32;">IoT – AUK / RIT</span>
-          <span class="tag" style="background:#e8f5e9; color:#2e7d32;">Java – VentureUP</span>
+          <span class="tag">Distinguished Software Engineer – STIKK</span>
+          <span class="tag">DevOps – AUK</span>
+          <span class="tag">Cyber Security – VentureUP</span>
+          <span class="tag">IoT – AUK / RIT</span>
+          <span class="tag">Java – VentureUP</span>
         </div>
       </div>
 
